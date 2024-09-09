@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun getExchangeRate(base: String, target: String) {
-        val apiKey = "YOUR_API_KEY"  // Replace with your actual API key
+        val apiKey = "2d36c537b530ce2804390252493d95dd95bad4a3"
 
         val call = RetrofitClient.apiService.getExchangeRate(apiKey, base, target)
         call.enqueue(object : Callback<CurrencyResponse> {
